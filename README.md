@@ -1,2 +1,2 @@
 # buildscripts
-Project containing build scripts for indiacovidforum.
+Project containing build scripts for indiacovidforum.com website.
