@@ -1,0 +1,16 @@
+debug: false
+baseUrl: http://ec2-52-66-26-19.ap-south-1.compute.amazonaws.com
+databaseConfiguration:
+  driver: mysql
+  host: localhost
+  database: flarumdbPROD
+  username: flarum
+  password: passflarum
+  prefix:
+adminUser:
+  username: admin
+  password: password
+  email: sudipmelepunathilmp@gmail.com
+settings:
+  forum_title: 'Covid India Forum'
+  forum_description: 'Description for covid india forum'
