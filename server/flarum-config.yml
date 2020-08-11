@@ -3,7 +3,7 @@ baseUrl: http://ec2-52-66-26-19.ap-south-1.compute.amazonaws.com
 databaseConfiguration:
   driver: mysql
   host: localhost
-  database: flarumdbPROD
+  database: flarumdb
   username: flarum
   password: passflarum
   prefix:
