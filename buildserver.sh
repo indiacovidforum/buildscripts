@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # clone the build scripts
 git clone https://github.com/indiacovidforum/buildscripts.git
 
