@@ -10,7 +10,7 @@ databaseConfiguration:
 adminUser:
   username: admin
   password: password
-  email: sudipmelepunathilmp@gmail.com
+  email: indiacovidforum@gmail.com
 settings:
-  forum_title: 'Covid India Forum'
-  forum_description: 'Description for covid india forum'
+  forum_title: 'India Covid Forum'
+  forum_description: 'Find help on COVID issues for India.'
