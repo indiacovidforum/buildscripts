@@ -2,7 +2,7 @@
 
 # backup mysql
 backup_mysql() {
-  /opt/bitnami/mysql/bin/mysqldump --lock-tables -u flarum -p$(grep -o "'.*'" bitnami_credentials | sed "s/'//g") flarumdb > $1/mysql.bak
+  /opt/bitnami/mysql/bin/mysqldump --lock-tables -u root -p$(grep -o "'.*'" bitnami_credentials | sed "s/'//g") flarumdb > $1/mysql.bak
 }
 
 # backup flarum
