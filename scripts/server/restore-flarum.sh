@@ -15,7 +15,7 @@ download_and_restore() {
   backuptime=$1
   backupdir=~/backups/$backuptime
   backupfile=flarum-bkp_$backuptime.zip
-  mkdir -p $backuptime
+  mkdir -p $backupdir
   aws s3 cp s3://indiacovidforum/backups/$backupfile $backupdir
   cd $backupdir
   unzip $backupdir/$backupfile
