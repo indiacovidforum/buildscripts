@@ -19,10 +19,10 @@ download_and_restore() {
   aws s3 cp s3://indiacovidforum/backups/$backupfile $backupdir
   cd $backupdir
   unzip $backupdir/$backupfile
+  cd ~
   restore_mysql $backupdir &
   restore_flarum $backupdir
   wait
-  cd ~
 }
 
 download_and_restore $1
