@@ -1,5 +1,5 @@
 debug: false
-baseUrl: http://ec2-52-66-26-19.ap-south-1.compute.amazonaws.com
+baseUrl: %PUBLIC_HOST_NAME%
 databaseConfiguration:
   driver: mysql
   host: localhost
