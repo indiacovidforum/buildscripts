@@ -21,7 +21,9 @@ backup_and_upload() {
   backup_mysql $backupdir &
   backup_flarum $backupdir
   wait
-  zip -r $backupfile $backupdir/*
+  cd $backupdir
+  zip -r $backupfile ./*
+  cd -
   aws s3 cp $backupfile s3://indiacovidforum/backups/
 }
 
