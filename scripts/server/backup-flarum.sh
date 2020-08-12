@@ -14,14 +14,14 @@ backup_flarum() {
 # backup and upload
 backup_and_upload() {
   backuptime=$(date +"%Y%m%d_%s")
-  backupdir=~/backups/$(backuptime)
-  backupfile=$(backupdir)/flarum-bkp_$(backuptime).zip
-  mkdir $(backupdir)
-  backup_mysql $(backupdir) &
-  backup_flarum $(backupdir)
+  backupdir=~/backups/$backuptime
+  backupfile=$backupdir/flarum-bkp_$backuptime.zip
+  mkdir -p $backupdir
+  backup_mysql $backupdir &
+  backup_flarum $backupdir
   wait
-  zip -r $(backupfile) $(backupdir)/*
-  aws s3 upload $(backupfile) s3://indiacovidforum/backups/
+  zip -r $backupfile $backupdir/*
+  aws s3 cp $backupfile s3://indiacovidforum/backups/
 }
 
 backup_and_upload
