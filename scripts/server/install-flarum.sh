@@ -1,8 +1,8 @@
 # copy latest flarum build
-aws s3 cp s3://indiacovidforum/flarum-builds/1.zip flarum.zip
+aws s3 cp s3://indiacovidforum/flarum-builds/1.zip /home/bitnami/flarum.zip
 
 # unzip flarum build
-unzip flarum.zip
+unzip /home/bitnami/flarum.zip
 
 # setting premissions
 sudo chown -R bitnami:daemon flarum
