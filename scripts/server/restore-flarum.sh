@@ -7,7 +7,7 @@ restore_mysql() {
 
 # flarum restore
 restore_flarum() {
-  yes | cp -rf $1/flarum/public/assets ~/flarum/public/
+  yes n | cp -rf $1/flarum/public/assets ~/flarum/public/
 }
 
 # download and restore flarum
