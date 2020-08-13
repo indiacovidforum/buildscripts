@@ -7,7 +7,8 @@ restore_mysql() {
 
 # flarum restore
 restore_flarum() {
-  yes | cp -rf $1/flarum/public/assets ~/flarum/public/
+  cp -rf $1/flarum/public/assets/avatars/* ~/flarum/public/assets/avatars/
+  sudo chown -R bitnami:daemon ~/flarum/public/assets/avatars
 }
 
 # download and restore flarum
