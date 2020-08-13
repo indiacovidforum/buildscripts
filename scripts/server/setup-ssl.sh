@@ -1,4 +1,5 @@
-# obtain and install SSL certificates for $1 (domain name), and install it in apache
+# obtain and install SSL certificates for $1 (domain name, for example 'stage.indiacovidforum.com'),
+# and install it in apache
 
 # install certbot silently
 sudo apt-get install certbot -y
