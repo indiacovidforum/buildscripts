@@ -25,6 +25,7 @@ backup_and_upload() {
   zip -r $backupfile ./*
   cd -
   aws s3 cp $backupfile s3://indiacovidforum/backups/
+  rm -rf $backupdir
 }
 
 backup_and_upload
