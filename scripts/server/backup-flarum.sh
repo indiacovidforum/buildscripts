@@ -8,8 +8,8 @@ backup_mysql() {
 # backup flarum
 backup_flarum() {
   # add all flarum folders that need to be backed up here
-  mkdir -p $1/flarum/public
-  cp -R ~/flarum/public/assets $1/flarum/public/assets
+  mkdir -p $1/flarum
+  cp -R ~/flarum $1/flarum
 }
 
 # backup and upload
