@@ -6,6 +6,6 @@ sudo dd if=/dev/zero of=/root/flarumswapfile bs=1M count=1024
 
 sudo chmod 600 /root/flarumswapfile
 
-sudo mkswap /root/flarumswapfile
+sudo /sbin/mkswap /root/flarumswapfile
 
-swapon /root/flarumswapfile
+sudo /sbin/swapon /root/flarumswapfile
