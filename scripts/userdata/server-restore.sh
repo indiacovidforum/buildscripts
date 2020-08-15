@@ -6,6 +6,9 @@ cd /home/bitnami
 # clone the build scripts
 sudo -H -u bitnami /opt/bitnami/git/bin/git clone https://github.com/indiacovidforum/devops.git
 
+# create swap space
+sudo -H -u bitnami devops/scripts/server/create-swap.sh
+
 # initialize the server
 sudo -H -u bitnami devops/scripts/server/init.sh
 
@@ -22,4 +25,4 @@ sudo -H -u bitnami devops/scripts/server/setup-mysql.sh
 sudo -H -u bitnami devops/scripts/server/setup-flarum.sh
 
 # restore flarum
-sudo -H -u bitnami devops/scripts/server/restore-flarum.sh 20200812_1597243082
+sudo -H -u bitnami devops/scripts/server/restore-flarum.sh 20200815_1597469991
